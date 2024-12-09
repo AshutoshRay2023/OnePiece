@@ -1,0 +1,70 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+/* General body styling for dark theme */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212; /* Dark background for the entire body */
+  color: #e0e0e0; /* Light text for readability */
+}
+
+/* Styling for code elements in dark theme */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background-color: #1e1e1e; /* Dark background for code blocks */
+  color: #80d4ff; /* Soft cyan text for code */
+  padding: 2px 4px; /* Padding for better readability */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 14px; /* Slightly larger font for legibility */
+}
+
+/* Add hover effect for links inside code */
+code a {
+  color: #61dafb; /* Light blue for links inside code */
+  text-decoration: none;
+}
+
+code a:hover {
+  text-decoration: underline;
+  color: #80d4ff; /* Subtle hover effect */
+}
+
+/* Global adjustments for smoother scrolling */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Add custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Dark scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #575757; /* Medium gray scrollbar thumb */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #757575; /* Lighter gray on hover */
+}

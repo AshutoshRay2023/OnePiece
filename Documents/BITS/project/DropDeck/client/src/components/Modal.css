@@ -1,0 +1,192 @@
+/* .modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 200px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalContainer {
+  display: inline-block;
+  text-align: center;
+}
+.title {
+  display: inline-block;
+  text-align: center;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 1px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer .footer button {
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+.address {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 330px;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  background-color: lightblue;
+} */
+
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.modalContainer {
+  width: 500px;
+  height: 200px;
+  border-radius: 12px;
+  background-color: #1e1e1e; /* Dark background for the modal */
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px; /* Enhanced shadow for depth */
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  color: #ffffff; /* Light text */
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff; /* Light text color */
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem; /* Slightly larger for visibility */
+  cursor: pointer;
+  color: #ffffff; /* White close button */
+  transition: color 0.3s ease;
+}
+
+.titleCloseBtn button:hover {
+  color: #ff4c4c; /* Red hover effect for close button */
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #dddddd; /* Subtle text color */
+}
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer .footer button {
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  border: none;
+  background-color: #007bff; /* Dark blue for buttons */
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modalContainer .footer button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+#cancelBtn:hover {
+  background-color: darkred; /* Darker red for hover */
+}
+
+.address {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 330px;
+  text-align: center;
+  background-color: #2a2a2a; /* Dark background for input */
+  border: 1px solid #444; /* Border for input */
+  color: #ffffff; /* White text */
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type="text"]:focus {
+  background-color: #004080; /* Subtle blue focus effect */
+  outline: none;
+  border: 1px solid #007bff; /* Highlight border on focus */
+}

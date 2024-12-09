@@ -1,0 +1,135 @@
+/* .top {
+  margin: 40px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.choose {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #5aff15, #00b712);
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+.choose:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+.textArea {
+  color: white;
+}
+
+.upload {
+  border: 1px solid #13aa52;
+  background-color: #13aa52;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.upload:hover {
+  border: 1px solid #13aa52;
+  background-color: #a5efc1;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+.upload:disabled,
+.upload[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+div {
+  padding: 5px 10px;
+} */
+
+/* General styles for the dark theme */
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the top container */
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212; /* Ensure the background matches */
+}
+
+/* Form styling */
+.form {
+  background-color: #1e1e1e; /* Darker background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  width: 300px;
+  text-align: center;
+}
+
+/* Label styling */
+.choose {
+  display: inline-block;
+  background-color: #3a3a3a; /* Button-like dark background */
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.choose:hover {
+  background-color: #5a5a5a; /* Slightly lighter on hover */
+}
+
+/* Input file styling */
+#file-upload {
+  display: none; /* Hide the default file input */
+}
+
+/* Text area styling */
+.textArea {
+  display: block;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #bbbbbb; /* Subtle text color */
+}
+
+/* Button styling */
+.upload {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.upload:disabled {
+  background-color: #3a3a3a; /* Disabled state */
+  cursor: not-allowed;
+}
+
+.upload:hover:enabled {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Add focus outline for accessibility */
+.choose:focus,
+.upload:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}

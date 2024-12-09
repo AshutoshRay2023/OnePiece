@@ -1,0 +1,121 @@
+/* .image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+  grid-auto-rows: 350px;
+
+  margin: 10px;
+}
+
+.image-list img {
+  width: 250px;
+  height: 350px;
+}
+.center {
+  margin: 40px;
+}
+
+.button {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #009ffd, #2a2a72);
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+.button:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+.address {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 330px;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  background-color: lightblue;
+} */
+
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the container for images */
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 15px; /* Spacing between images */
+  margin: 20px auto;
+  padding: 10px;
+  width: 90%; /* Centering content */
+  border-radius: 8px;
+  background-color: #1e1e1e; /* Dark background for grid */
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 12px; /* Subtle shadow for depth */
+}
+
+/* Individual images in the list */
+.image-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 8px; /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-list img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 6px 15px; /* Highlight shadow on hover */
+}
+
+/* Input field for entering an address */
+.address {
+  display: block;
+  margin: 20px auto;
+  height: 35px;
+  width: 90%; /* Full width input with margins */
+  max-width: 400px; /* Limit maximum width */
+  text-align: center;
+  background-color: #2a2a2a; /* Dark input background */
+  border: 1px solid #444; /* Subtle border */
+  color: #ffffff; /* Light text */
+  border-radius: 6px; /* Rounded corners */
+  padding: 5px;
+  font-size: 14px;
+}
+
+.address:focus {
+  background-color: #3a3a72; /* Subtle dark blue focus effect */
+  outline: none;
+  border: 1px solid #007bff; /* Highlighted border on focus */
+  color: #ffffff; /* Keep text light */
+}
+
+/* Button for fetching data */
+.button {
+  background-image: linear-gradient(-180deg, #4a4a4a, #2a2a2a); /* Dark gradient */
+  border-radius: 6px;
+  color: #ffffff; /* Light text */
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px auto;
+  display: block; /* Center the button */
+}
+
+.button:hover {
+  background-image: linear-gradient(-180deg, #575757, #404040); /* Lighter gradient on hover */
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 4px 10px; /* Highlight shadow on hover */
+}
+
