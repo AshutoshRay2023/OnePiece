@@ -1,0 +1,5 @@
+- The singleton pattern ensures that a class has only one instance and provides a global
+point to that instance.
+- It is commonly used for logging, database connections, configuration management, etc.
+
+
