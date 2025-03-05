@@ -1,6 +1,0 @@
-- It is a creational design pattern used to create objects without specifying their exact class.
-- In the One Piece world, there are different types of characters:
-  - Pirates
-  - Marines
-  - Revolutionaries
-- Each type has unique abilities, but they share a common interface. Using the Factory Pattern, we create a CharacterFactory to generate instances dynamical
